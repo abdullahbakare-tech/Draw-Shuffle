@@ -18,29 +18,38 @@
 } */
 
 .draw {
-  background-color:hsl(0, 6%, 62%) ;
-  border:none;
-  color:black;
+  background-color: hsl(0, 6%, 62%);
+  border: none;
+  color: black;
   text-align: center;
-  text-decoration:none;
-  border-radius:10px;
+  text-decoration: none;
+  border-radius: 10px;
   height: 50px;
-  border:0cap;
+  border: 0cap;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.draw:hover{
-  background:red;
+.draw:hover {
+  background: red;
 }
 
-.container{
- margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+.button-container {
+  height: 70px;
+  width: 100%;
+  border: 2px solid;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+}
+
+.card-display{
+  border: 2px solid;
+  height:600px;
+  display:flex;
+  justify-content:200px;
+  margin-top:10px;
 
 }
