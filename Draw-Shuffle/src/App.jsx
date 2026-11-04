@@ -114,9 +114,24 @@ function App() {
         >
           {shuffled ? 'Shuffling...' : 'Shuffle Deck'}
         </button>
+
+                <button onClick={handleAutoDrawToggle} disabled={shuffled}>
+          {redraw ? 'Stop drawing' : 'Start drawing'}
+        </button>
       </div>
 
-      <section className="card-display"></section>
+      <section className="card-display">
+     <p>Cards remaining: {remaining !== null ? remaining : 'Loading...'}</p>
+
+      {drawncard && (
+        <div style={{ marginTop: '20px' }}>
+          <img
+            src={drawncard.image}
+            alt={`${drawncard.value} of ${drawncard.suit}`}
+          />
+        </div>
+      )}
+      </section>
     </div>
   );
 }
