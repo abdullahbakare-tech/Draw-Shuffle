@@ -51,5 +51,8 @@
   display:flex;
   justify-content:200px;
   margin-top:10px;
+  align-items: center;
+  justify-content: center;
 
 }
+
